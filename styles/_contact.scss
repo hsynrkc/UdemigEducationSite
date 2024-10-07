@@ -1,0 +1,54 @@
+@import "./variables";
+@import "./global";
+@import "./mixin";
+.contact-body {
+  @extend .flex;
+
+  @include laptop() {
+    flex-direction: column;
+  }
+
+  .contact-img {
+    @include laptop() {
+      width: 90%;
+    }
+    width: 50%;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }
+  form {
+    @include laptop() {
+      width: 90%;
+    }
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    label {
+      margin-bottom: 20px;
+    }
+    input,
+    button {
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+
+    .form-btn {
+      background-color: $main-color;
+      color: $text-color;
+      font-size: $p-font;
+      margin-top: 20px;
+      @extend .transition;
+      &:hover {
+        background-color: #a48032;
+        color: $bg-color;
+      }
+    }
+  }
+}

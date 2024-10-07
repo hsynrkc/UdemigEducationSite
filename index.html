@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Project</title>
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- Font-Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- ! Header -->
+    <header>
+      <!-- * Logo -->
+      <a href="#" class="logo"><span>Udemig</span> Education</a>
+      <!-- * Navigation -->
+      <nav class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Information</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Courses</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </nav>
+      <!-- * Social -->
+      <div class="nav-social">
+        <a href="#">Follow Us</a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </header>
+    <!-- ! Main -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <h5>Let's</h5>
+        <h1>Planning your own future</h1>
+        <p>
+          Get the oppourtunity for a great future by stepping into the software
+          world with us.
+        </p>
+        <button class="btn">Get Started</button>
+      </div>
+    </section>
+    <!-- ! Educations -->
+    <section class="educations" id="educations">
+      <div class="educations-content">
+        <!-- Education-1 -->
+        <div class="row">
+          <div class="row-img">
+            <img src="/images/frontend-img.png" alt="" />
+          </div>
+          <h4>Fronted</h4>
+        </div>
+        <!-- Education-2 -->
+        <div class="row">
+          <div class="row-img">
+            <img src="/images/backend-course.png" alt="" />
+          </div>
+          <h4>Backend</h4>
+        </div>
+        <!-- Education-3 -->
+        <div class="row">
+          <div class="row-img">
+            <img src="/images/native-img.png" alt="" />
+          </div>
+          <h4>React Native</h4>
+        </div>
+        <!-- Education-4 -->
+        <div class="row">
+          <div class="row-img">
+            <img src="/images/english-img.jpeg" alt="" />
+          </div>
+          <h4>English</h4>
+        </div>
+      </div>
+    </section>
+    <!-- ! About Us -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="./images/udemig-logo.jpeg" alt="" />
+      </div>
+      <div class="about-text">
+        <h5>Who are we ?</h5>
+        <h2>Why are we the best software academy?</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam quos
+          id eligendi maiores perferendis, minus sint laudantium nam rerum error
+          iste iure a nesciunt hic obcaecati quasi? Adipisci, numquam error.
+        </p>
+        <button class="btn">Read More</button>
+      </div>
+    </section>
+    <!-- ! Courses -->
+    <section id="courses">
+      <div class="course-title">
+        <h2>Popular Courses</h2>
+      </div>
+      <div class="box">
+        <div class="box-content">
+          <img src="/images/frontend-course-img.jpeg" alt="" />
+          <div class="box-text">
+            <p><i class="fa-solid fa-book"></i> Fronted Course</p>
+            <p><i class="fa-regular fa-clock"></i> 6 Months</p>
+            <p><i class="fa-regular fa-dollar-sign"></i> 2000</p>
+          </div>
+        </div>
+        <div class="box-content">
+          <img src="/images/backend-img.png" alt="" />
+          <div class="box-text">
+            <p><i class="fa-solid fa-book"></i> Backend Course</p>
+            <p><i class="fa-regular fa-clock"></i> 3 Months</p>
+            <p><i class="fa-regular fa-dollar-sign"></i> 2000</p>
+          </div>
+        </div>
+        <div class="box-content">
+          <img src="/images/native-img.png" alt="" />
+          <div class="box-text">
+            <p><i class="fa-solid fa-book"></i> React Native Course</p>
+            <p><i class="fa-regular fa-clock"></i> 3 Months</p>
+            <p><i class="fa-regular fa-dollar-sign"></i> 2000</p>
+          </div>
+        </div>
+      </div>
+      <div class="content-btn">
+        <button class="btn">See Courses</button>
+      </div>
+    </section>
+    <!-- ! Contact -->
+    <section class="contact" id="contact">
+      <div class="contact-body">
+        <div class="contact-img">
+          <img src="images/contact-us.jpeg" alt="" />
+        </div>
+        <form action="">
+          <label for="name" class="text-white">Name:</label>
+          <input type="text" />
+          <label for="surname" class="text-white">Surname:</label>
+          <input type="text" />
+          <label for="message" class="text-white">Your Message:</label>
+          <input type="text" />
+          <button class="form-btn">Send</button>
+        </form>
+      </div>
+    </section>
+    <!-- ! Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-box">
+          <h3>Services</h3>
+          <a href="#">Frontend Course</a>
+          <a href="#">Backend Course</a>
+          <a href="#">React Native Course</a>
+          <a href="#">English Course</a>
+        </div>
+        <div class="footer-box">
+          <h3>About Us</h3>
+          <a href="#">Our Story</a>
+          <a href="#">Who Are We ?</a>
+          <a href="#">Our Mission</a>
+          <a href="#">Our Vision</a>
+        </div>
+        <div class="footer-box">
+          <h3>Help</h3>
+          <a href="#">FAQs</a>
+          <a href="#">Contact Us</a>
+        </div>
+        <div class="footer-box">
+          <h3>Social Medias</h3>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="copytright">2024 &copy; Udemig. All rights reserved.</div>
+    </footer>
+  </body>
+</html>
